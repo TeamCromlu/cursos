@@ -1,5 +1,6 @@
 .Chat
 	display none
+	box-shadow: 0px 0px 6px #999
 	// height auto
 	
 @media screen and (min-width 767px)
@@ -28,7 +29,7 @@
 		// width 100%
 		width 38%
 		// max-height 55s0px
-		background-color rgba(191, 191, 191, 0.45)
+		background-color white
 		&__box
 			// margin 0 .5em 
 			width  99%
@@ -46,15 +47,18 @@
 		// 	padding 0.5em
 		// 	background #cbf0ff
 		&__message
+			border 1px solid #CECECE
+			box-sizing border-box
+			padding .5em
 			height 50px
 			max-width 97%
 			width 97%
 			// padding 8px
 			vertical-align top
 			outline none
-			border none
+			// border none
 			max-height 50px
-			margin 5px 0
+			// margin 5px 0
 			font-size 14px
 			border-radius 5px
 		&__list
@@ -74,9 +78,10 @@
 			scroll()
 		&__item
 			background-color white
-			// border 1px solid rgba(0, 0, 0, 0.44)
+			// border 1px solid #DEDEDE
+			border-bottom 1px solid #DEDEDE
 			width 95%
-			border-radius 5px
+			// border-radius 5px
 			// padding .5em
 			// background #CBF0FF
 			margin 0 auto .5em auto

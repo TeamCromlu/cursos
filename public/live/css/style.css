@@ -5,7 +5,7 @@
   font-family: 'Questrial' sans-serif;
 }
 body {
-  background: #fff;
+  background: #f5f7f8;
   height: 100vh;
 }
 body::-webkit-scrollbar {
@@ -301,37 +301,29 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
   }
   .Header__linkDesktop {
-    background: #00b383;
+    background: #00e2d4;
     cursor: pointer;
     height: 40px;
     width: 200px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
+    border-bottom: 1px solid rgba(0,137,144,0.58);
     color: #fff;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: flex-star;
-    -moz-box-pack: flex-star;
-    -o-box-pack: flex-star;
-    -ms-flex-pack: flex-star;
-    -webkit-justify-content: flex-star;
-    justify-content: flex-star;
+  }
+  .Header__linkDesktop:first-child {
+    border-top: 1px solid rgba(0,137,144,0.58);
+  }
+  .Header__linkDesktop:hover {
+    background-color: #007560;
   }
   .Header__button {
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    line-height: 40px;
   }
   .Header__iconExit {
-    margin: 0.5em;
+    display: inline-block;
+    margin: 0 0.5em;
     font-size: 1.5em;
   }
   .Header__listLink {
@@ -469,6 +461,16 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin: 0 auto;
 }
+.Video__title {
+  width: 100%;
+  margin: 0 auto;
+}
+.Video__title h2 {
+  color: #fff;
+  background-color: #4ecc63;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
 .video {
   height: 0;
   padding-bottom: 56.25%;
@@ -488,7 +490,7 @@ video {
 @media screen and (min-width: 767px) {
   .Video {
     height: 82vh;
-    margin: 5px;
+    margin: 0 5px;
     width: 60%;
   }
   .Video__box {
@@ -498,6 +500,8 @@ video {
 }
 .Chat {
   display: none;
+  -webkit-box-shadow: 0px 0px 6px #999;
+  box-shadow: 0px 0px 6px #999;
 }
 @media screen and (min-width: 767px) {
   .Chat {
@@ -509,7 +513,7 @@ video {
     text-align: left;
     margin: 0 0.4em;
     width: 38%;
-    background-color: rgba(191,191,191,0.45);
+    background-color: #fff;
   }
   .Chat__box {
     width: 99%;
@@ -524,14 +528,17 @@ video {
     margin: 0.5em 0;
   }
   .Chat__message {
+    border: 1px solid #cecece;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em;
     height: 50px;
     max-width: 97%;
     width: 97%;
     vertical-align: top;
     outline: none;
-    border: none;
     max-height: 50px;
-    margin: 5px 0;
     font-size: 14px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -583,9 +590,8 @@ video {
   }
   .Chat__item {
     background-color: #fff;
+    border-bottom: 1px solid #dedede;
     width: 95%;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
     margin: 0 auto 0.5em auto;
   }
   .Chat__content {
@@ -630,9 +636,7 @@ video {
   display: block;
   margin: 0 auto;
   width: 99%;
-  background: #87ceeb;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: #4eccc6;
   margin: 0.5em auto 0 auto;
 }
 .Files__box {
@@ -640,12 +644,17 @@ video {
   width: 100%;
   height: 95px;
 }
+.Files__link {
+  list-style: none;
+}
 .Files__text {
   margin: 0 auto;
   width: 90%;
 }
 .Files__title {
-  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
   padding: 0.3em;
 }
 .Files__download {

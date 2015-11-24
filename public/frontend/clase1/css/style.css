@@ -5,7 +5,7 @@
   font-family: 'Questrial' sans-serif;
 }
 body {
-  background: #fff;
+  background: #f5f7f8;
   height: 100vh;
 }
 body::-webkit-scrollbar {
@@ -110,7 +110,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.3s;
 }
 .Header__link:hover {
-  background-color: #008078;
+  background-color: #01e6d5;
   color: #fff;
 }
 .Header__nav {
@@ -129,11 +129,11 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
 }
 .Header__optionMobile {
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #01e6d5;
   text-align: center;
 }
 .Header__optionMobile:first-child {
-  border-top: 1px solid #808080;
+  border-top: 1px solid #01e6d5;
 }
 .Header__linkMobile {
   color: #000;
@@ -151,9 +151,8 @@ body::-webkit-scrollbar-thumb {
   transition: 0.2s;
 }
 .Header__linkMobile:hover {
-  background-color: #006b64;
+  background-color: #01e6d5;
   color: #fff;
-  border-bottom: 4px solid #002b1b;
 }
 .Header__listDesktop {
   display: none;
@@ -244,9 +243,28 @@ body::-webkit-scrollbar-thumb {
   .Header__link {
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 0 0.5em;
+    height: 60px;
+    line-height: 60px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .Header__link:hover {
+    background-color: #01e6d5;
   }
   .Header__user {
     border-left: 1px solid #00e6d5;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .Header__user:hover {
+    border-left: 1px solid #01e6d5;
   }
   .Header__userDesktop {
     cursor: pointer;
@@ -264,6 +282,11 @@ body::-webkit-scrollbar-thumb {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
     -webkit-box-align: center;
     -moz-box-align: center;
     -o-box-align: center;
@@ -271,44 +294,48 @@ body::-webkit-scrollbar-thumb {
     -webkit-align-items: center;
     align-items: center;
   }
+  .Header__userDesktop:hover {
+    background-color: #01e6d5;
+  }
+  .Header__userDesktop:hover .Header__userName {
+    color: #fff;
+  }
   .Header__linkDesktop {
-    background: #00b383;
+    background: #00e2d4;
     cursor: pointer;
     height: 40px;
     width: 200px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
+    list-style: none;
+    border-bottom: 1px solid rgba(0,137,144,0.58);
     color: #fff;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: flex-star;
-    -moz-box-pack: flex-star;
-    -o-box-pack: flex-star;
-    -ms-flex-pack: flex-star;
-    -webkit-justify-content: flex-star;
-    justify-content: flex-star;
+  }
+  .Header__linkDesktop:first-child {
+    border-top: 1px solid rgba(0,137,144,0.58);
+  }
+  .Header__linkDesktop:hover {
+    background-color: #007560;
   }
   .Header__button {
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    line-height: 40px;
   }
   .Header__iconExit {
-    margin: 0.5em;
+    display: inline-block;
+    margin: 0 0.5em;
     font-size: 1.5em;
   }
   .Header__listLink {
     display: none;
   }
   .Header__userName {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
     display: block;
     margin-left: 0.2em;
     font-weight: bold;
@@ -417,9 +444,8 @@ body::-webkit-scrollbar-thumb {
 }
 .Video {
   display: inline-block;
-  top: 70px;
+  margin-top: 70px;
   bottom: 0;
-  position: relative;
   vertical-align: top;
   width: 100%;
 }
@@ -434,6 +460,16 @@ body::-webkit-scrollbar-thumb {
 .Video__video {
   width: 100%;
   margin: 0 auto;
+}
+.Video__title {
+  width: 100%;
+  margin: 0 auto;
+}
+.Video__title h2 {
+  color: #fff;
+  background-color: #167ac6;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 .video {
   height: 0;
@@ -453,8 +489,7 @@ video {
 }
 @media screen and (min-width: 767px) {
   .Video {
-    height: 82vh;
-    margin: 5px;
+    margin: 75px 5px 5px;
     width: 60%;
   }
   .Video__box {
@@ -552,8 +587,10 @@ video {
     width: 95%;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    padding: 0.5em;
     margin: 0 auto 0.5em auto;
+  }
+  .Chat__content {
+    margin: 0.5em;
   }
   .Chat__title {
     width: 100%;
@@ -588,5 +625,82 @@ video {
     border-radius: 5px;
     height: auto;
     background: #fff;
+  }
+}
+a {
+  text-decoration: none;
+}
+.Files {
+  display: block;
+  width: 99%;
+  margin: 0.5em auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Files__box {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.Files__download {
+  background-color: #fff;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+.Files__link {
+  background-color: #fff;
+}
+.Files__titleEnlaces {
+  width: 100%;
+  background-color: #167ac6;
+  color: #fff;
+  height: auto;
+  padding: 0.3em 0;
+}
+.Files__icon,
+.Files__title {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 0.3em;
+}
+.Files__buttonDownload {
+  width: 30%;
+  margin: 1em auto;
+}
+.Files__boton {
+  background-color: #00c82a;
+  padding: 0.5em;
+  display: block;
+  font-size: 1.5em;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-bottom: 4px solid #299d00;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Files__boton:hover {
+  background-color: #f00;
+  border-bottom: 4px solid #bf0000;
+}
+.Files__linkList {
+  list-style: none;
+  text-align: left;
+  padding: 1em;
+}
+.Files__enlace {
+  color: #153357;
+  font-weight: bold;
+}
+.Files__enlace:hover {
+  color: #3bd200;
+  text-decoration: underline;
+}
+@media screen and (min-width: 767px) {
+  .Files {
+    width: 38%;
+    display: inline-block;
+    margin-top: 75px;
   }
 }

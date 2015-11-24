@@ -161,21 +161,26 @@
 				// color white
 			// justify-content space-between
 		&__linkDesktop
-			background #00B383
+			background #00E2D4
 			cursor pointer
 			height 40px
 			width 200px
-			display flex
+			border-bottom 1px solid rgba(0, 137, 144, 0.58)
 			color white
-			align-items center
-			justify-content flex-star
+			&:first-child
+				border-top 1px solid rgba(0, 137, 144, 0.58)
+			&:hover
+				background-color #007560
 		&__button
 			font-size 1.5rem
 			text-decoration none
 			color white
+			display inline-block
+			line-height 40px
 			// font-weight bold
 		&__iconExit
-			margin .5em
+			display inline-block
+			margin 0 .5em
 			font-size 1.5em
 		&__listLink
 			display none
