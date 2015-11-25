@@ -29,7 +29,9 @@ a
 		background-color white
 		padding-bottom .5em
 		margin-bottom 1.5em
+		box-shadow 0px 0px 5px #999
 	&__link
+		box-shadow 0px 0px 5px #999
 		background-color white
 	&__titleEnlaces
 		botones()
@@ -38,7 +40,7 @@ a
 		font-size 1.5em
 		padding .3em
 	&__buttonDownload
-		width 30%
+		width 50%
 		margin 1em auto
 	&__boton
 		background-color #00C82A
@@ -54,9 +56,9 @@ a
 			background-color red
 			border-bottom 4px solid #BF0000
 	&__linkList
+		padding .5em
 		list-style none
 		text-align left
-		padding 1em
 	&__enlace
 		color #153357
 		font-weight bold
@@ -70,3 +72,10 @@ a
 		width 38%
 		display inline-block
 		margin-top 75px
+		
+@media screen and (min-width 1200px)
+	.Files
+		&__buttonDownload
+			width 30%
+		&__linkList
+			padding 1em

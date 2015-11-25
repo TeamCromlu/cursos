@@ -459,6 +459,9 @@ body::-webkit-scrollbar-thumb {
 }
 .Video__video {
   width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #999;
+  box-shadow: 0px 0px 5px #999;
   margin: 0 auto;
 }
 .Video__title {
@@ -647,8 +650,12 @@ a {
   background-color: #fff;
   padding-bottom: 0.5em;
   margin-bottom: 1.5em;
+  -webkit-box-shadow: 0px 0px 5px #999;
+  box-shadow: 0px 0px 5px #999;
 }
 .Files__link {
+  -webkit-box-shadow: 0px 0px 5px #999;
+  box-shadow: 0px 0px 5px #999;
   background-color: #fff;
 }
 .Files__titleEnlaces {
@@ -665,7 +672,7 @@ a {
   padding: 0.3em;
 }
 .Files__buttonDownload {
-  width: 30%;
+  width: 50%;
   margin: 1em auto;
 }
 .Files__boton {
@@ -685,9 +692,9 @@ a {
   border-bottom: 4px solid #bf0000;
 }
 .Files__linkList {
+  padding: 0.5em;
   list-style: none;
   text-align: left;
-  padding: 1em;
 }
 .Files__enlace {
   color: #153357;
@@ -702,5 +709,13 @@ a {
     width: 38%;
     display: inline-block;
     margin-top: 75px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Files__buttonDownload {
+    width: 30%;
+  }
+  .Files__linkList {
+    padding: 1em;
   }
 }

@@ -19,6 +19,8 @@
 		width 99%
 		margin 0 auto
 	&__video
+		box-shadow 0px 0px 5px #999
+		background-color white
 		width 100%
 		margin 0 auto
 	&__title
@@ -27,7 +29,7 @@
 		h2
 			color white
 			background-color #4ECC63
-			font-size 1.5em
+			font-size 1em
 			padding .5em
 
 
@@ -47,6 +49,10 @@ video
 	right 0
 	left 0
 	
+@media screen and (min-width 480px)
+	.Video
+		&__title
+			font-size 1.3em
 @media screen and (min-width 767px)
 	.Video
 		height 82vh
@@ -58,3 +64,5 @@ video
 			// padding 10px
 			width 95%
 			height auto
+		&__title
+			font-size 1.5em
