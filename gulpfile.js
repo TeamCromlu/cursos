@@ -99,24 +99,24 @@ gulp.task('browserify-production', function () {
 
 gulp.task('jade', function(){
   console.log('Nuevo Html generado...'); 
-	gulp.src('./lib/live/index.jade') //ruta del archivo de jade
+	gulp.src('./lib/index.jade') //ruta del archivo de jade
   .pipe(plumber())
 	.pipe(jade({
     compress: false
   }))
-  .pipe(gulp.dest('./public/live')) //ruta del archivo donde se va a generar el html
+  .pipe(gulp.dest('./public')) //ruta del archivo donde se va a generar el html
   .pipe(livereload());
 });
 
 gulp.task('stylus', function(){
   console.log('Nuevo Css generado...'); 
-	gulp.src('./lib/live/style.styl') //ruta del archivo de styl
+	gulp.src('./lib/estilos.styl') //ruta del archivo de styl
   .pipe(plumber())
 	.pipe(stylus({
     use: nib(),
 		compress: false
 	}))
-	.pipe(gulp.dest('./public/live/css')) //ruta del archivo donde se va a generar el css
+	.pipe(gulp.dest('./public/css')) //ruta del archivo donde se va a generar el css
   .pipe(livereload());
 });
 

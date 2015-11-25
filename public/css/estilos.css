@@ -31,6 +31,18 @@ body::-webkit-scrollbar-thumb {
 .esconder {
   display: none;
 }
+.ocultar {
+  display: none;
+}
+.rec a {
+  color: #da002c;
+  text-shadow: 0px 0px 5px #f39292;
+}
+.rec a:hover {
+  background-color: transparent;
+  color: #008400;
+  text-shadow: 0px 0px 5px #119e00;
+}
 .Header {
   position: fixed;
   height: 60px;
@@ -198,6 +210,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
   }
   .Header__listDesktop {
+    list-style: none;
     right: -100%;
     display: -webkit-box;
     display: -moz-box;
@@ -308,7 +321,6 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     height: 40px;
     width: 200px;
-    list-style: none;
     border-bottom: 1px solid rgba(0,137,144,0.58);
     color: #fff;
   }
